@@ -1,43 +1,33 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/pG3gvzt-)
-# PCCCS495 – Term II Project
+# Mini Banking System using Layered Architecture
 
-## Project Title
-
----
-
-## Problem Statement (max 150 words)
-
----
+## Problem Statement
+The project aims to simulate basic banking operations such as account creation, deposit, withdrawal, and fund transfer. The system is designed using a layered architecture to ensure modularity, maintainability, and separation of concerns.
 
 ## Target User
-
----
+Students, beginners learning Object-Oriented Programming, and small-scale banking simulations.
 
 ## Core Features
-
-- 
-- 
-- 
-
----
+- Create account (Savings / Checking)
+- Deposit money
+- Withdraw money
+- Transfer funds between accounts
+- Check account balance
 
 ## OOP Concepts Used
+- Encapsulation: Protects sensitive data like account balance
+- Inheritance: SavingsAccount and CheckingAccount extend Account
+- Polymorphism: Different behavior of withdraw() method
+- Abstraction: Service layer hides internal logic
 
-- Abstraction:
-- Inheritance:
-- Polymorphism:
-- Exception Handling:
-- Collections / Threads:
-
----
-
-## Proposed Architecture Description
-
----
+## Architecture Description
+- UI Layer: Handles user interaction (Main.java)
+- Service Layer: Business logic (AccountService.java)
+- Repository Layer: Data storage (AccountRepository.java)
+- Model Layer: Core classes (Account, SavingsAccount, CheckingAccount)
 
 ## How to Run
-
----
-
-## Git Discipline Notes
-Minimum 10 meaningful commits required.
+1. Navigate to src folder  
+2. Compile:
+   javac ui/Main.java  
+3. Run:
+   java ui.Main  
